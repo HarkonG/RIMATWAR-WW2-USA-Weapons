@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <!-- ======================= [Mk.II (Frag)] ========================== -->
+    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>HRK_Proj_MK2Grenade</defName>
+        <label>Mk.II frag grenade</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/HRK_MK2Grenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>1.9</explosionRadius >
+            <damageDef>Bomb</damageDef>
+            <!-- Use default damage from explosion def -->
+            <explosionDelay>100</explosionDelay>
+            <soundExplode>HRK_Explosion_FragGrenade</soundExplode>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseMakeableGrenade">
+        <defName>HRK_MK2Grenade</defName>
+        <label>Mk.II frag grenades</label>
+        <description>The Mk.II grenade was the standard hand grenade of the US army during World War II.</description>
+        <recipeMaker>
+            <researchPrerequisite>Machining</researchPrerequisite>
+        </recipeMaker>
+        <relicChance>0</relicChance>
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>HRK_Category_RimAtWarGrenades_USA</li>
+            <li>Grenades</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_MK2GrenadeBelt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <Mass>1</Mass>
+            <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+            <WorkToMake>12000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>10</Steel>
+            <Chemfuel>80</Chemfuel>
+            <WoodLog>10</WoodLog>
+        </costList>
+        <weaponTags>
+            <li>GrenadeDestructive</li>
+        </weaponTags>
+        <smeltable>true</smeltable>
+        <verbs>
+            <li>
+                <label>throw Mk.II frag grenade</label>
+                <verbClass>Verb_LaunchProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>12.9</range>
+                <forcedMissRadius>1.9</forcedMissRadius>
+                <warmupTime>1.5</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>HRK_Proj_MK2Grenade</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>2.66</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!-- ======================= [M37 Demo Charge (Demo Charge)] ========================== -->
+    <ThingDef ParentName="BaseGrenadeProjectile">
+        <defName>HRK_Proj_M37DemoGrenade</defName>
+        <label>M37 demo charge</label>
+        <thingClass>Projectile_Explosive</thingClass>
+        <graphicData>
+            <texPath>Things/Projectile/HRK_M37DemoGrenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <explosionRadius>3.9</explosionRadius >
+            <damageDef>Bomb</damageDef>
+            <!-- Use default damage from explosion def -->
+            <explosionDelay>250</explosionDelay>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseMakeableGrenade">
+        <defName>HRK_M37DemoGrenade</defName>
+        <label>M37 demo charge</label>
+        <description>The M37 demolition charge was an explosive device used by the US army during World War II.</description>
+        <equippedAngleOffset>15</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>Machining</researchPrerequisite>
+        </recipeMaker>
+        <relicChance>0</relicChance>
+        <tickerType>Normal</tickerType>
+        <thingCategories>
+            <li>HRK_Category_RimAtWarGrenades_USA</li>
+            <li>Grenades</li>
+        </thingCategories>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_M37DemoGrenade</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+        <soundInteract>Interact_Grenade</soundInteract>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <Mass>1</Mass>
+            <RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+            <WorkToMake>3000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>75</Steel>
+            <Chemfuel>130</Chemfuel>
+        </costList>
+        <weaponTags Inherit="False">
+        </weaponTags>
+        <smeltable>true</smeltable>
+        <verbs>
+            <li>
+                <label>throw M37 demo charge</label>
+                <verbClass>Verb_LaunchProjectile</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <range>3</range>
+                <forcedMissRadius>0.7</forcedMissRadius>
+                <warmupTime>2.8</warmupTime>
+                <noiseRadius>4</noiseRadius>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <soundCast>ThrowGrenade</soundCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <defaultProjectile>HRK_Proj_M37DemoGrenade</defaultProjectile>
+                <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>7.68</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

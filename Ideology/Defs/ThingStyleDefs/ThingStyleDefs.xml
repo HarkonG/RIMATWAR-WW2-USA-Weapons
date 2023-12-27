@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingStyleDef>
+        <defName>HRK_BARRifle_Alt</defName>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_BARRifle_Alt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconPath>UI/Weapons/HRK_BARRifle_Alt</uiIconPath>
+    </ThingStyleDef>
+
+    <ThingStyleDef>
+        <defName>HRK_Bazooka_Alt</defName>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_Bazooka_Alt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconPath>UI/Weapons/HRK_Bazooka_Alt</uiIconPath>
+    </ThingStyleDef>
+
+    <ThingStyleDef>
+        <defName>HRK_M3SMG_Alt</defName>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_M3SMG_Alt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<uiIconPath>UI/Weapons/HRK_M3SMG_Alt</uiIconPath>-->
+    </ThingStyleDef>
+
+    <ThingStyleDef>
+        <defName>HRK_M1911Pistol_Alt</defName>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_M1911Pistol_Alt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<uiIconPath>UI/Weapons/HRK_M1911Pistol_Alt</uiIconPath>-->
+    </ThingStyleDef>
+
+    <ThingStyleDef>
+        <defName>HRK_M1919LMG_Alt</defName>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_M1919LMG_Alt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconPath>UI/Weapons/HRK_M1919LMG_Alt</uiIconPath>
+    </ThingStyleDef>
+
+    <ThingStyleDef>
+        <defName>HRK_M1917Revolver_Alt</defName>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_M1917Revolver_Alt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<uiIconPath>UI/Weapons/HRK_M1917Revolver_Alt</uiIconPath>-->
+    </ThingStyleDef>
+
+</Defs>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1911Pistol</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1911Pistol</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1917Revolver</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1917Revolver</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_WW2Flamethrower</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Weapons/HRK_Shot_WW2Flamethrower</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M3SMG</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M3SMG</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1A1Thompson</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1A1Thompson</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_Auto5Shotgun</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_Auto5Shotgun</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_BARRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_BARRifle</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1Carbine</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1Carbine</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1Garand</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1Garand</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1903A1SR</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1903A1SR</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1GarandGL</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1GarandGL</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M1919LMG</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_M1919LMG</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_M18RecoillessRifle</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_Bazooka</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>HRK_Shot_Bazooka</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Shot_Bazooka</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

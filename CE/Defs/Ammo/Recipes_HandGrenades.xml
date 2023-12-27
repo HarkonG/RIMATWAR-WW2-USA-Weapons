@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- ========== Mk.II grenade (Frag) ========== -->
+    <RecipeDef ParentName="GrenadeRecipeBase">
+        <defName>HRK_RecipeDef_MK2Grenade</defName>
+        <label>make Mk.II frag grenade x10</label>
+        <description>Craft 10 Mk.II frag grenades.</description>
+        <jobString>Making Mk.II frag grenades.</jobString>
+        <workAmount>3600</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>FSX</li>
+                <li>WoodLog</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <HRK_MK2Grenade>10</HRK_MK2Grenade>
+        </products>
+    </RecipeDef>    
+
+    <!-- ========== M37 demo charge ========== -->
+    <RecipeDef ParentName="GrenadeRecipeBase">
+        <defName>HRK_RecipeDef_M37DemoGrenade</defName>
+        <label>make M37 demo charge x5</label>
+        <description>Craft 5 M37 demo charges.</description>
+        <jobString>Making M37 demo charges.</jobString>
+        <workAmount>4500</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>FSX</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>FSX</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <HRK_M37DemoGrenade>5</HRK_M37DemoGrenade>
+        </products>
+    </RecipeDef>
+
+</Defs>

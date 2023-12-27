@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <!--===== 9x19mmPara =====-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_9x19mmPara_AP"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Pistol/AP</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_9x19mmPara_FMJ"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Pistol/FMJ</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_9x19mmPara_HP"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Pistol/HP</texPath>
+        </value>
+    </Operation>
+
+    <!--===== 792x57mmMauser =====-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x57mmMauser_AP"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Drum/AP</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x57mmMauser_FMJ"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Drum/FMJ</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x57mmMauser_HE"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Drum/HE</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x57mmMauser_HP"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Drum/HP</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x57mmMauser_Incendiary"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Drum/Incendiary</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x57mmMauser_Sabot"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Drum/Sabot</texPath>
+        </value>
+    </Operation>
+
+    <!--===== 792x33mmKurz =====-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x33mmKurz_AP"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/STG/AP</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x33mmKurz_FMJ"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/STG/FMJ</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x33mmKurz_HE"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/STG/HE</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x33mmKurz_HP"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/STG/HP</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x33mmKurz_Incendiary"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/STG/Incendiary</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x33mmKurz_Sabot"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/STG/Sabot</texPath>
+        </value>
+    </Operation>
+
+    <!--===== 792x94mmPatronen =====-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x94mmPatronen_AP"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/HighCaliber/AP</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x94mmPatronen_FMJ"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/HighCaliber/FMJ</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x94mmPatronen_HE"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/HighCaliber/HE</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x94mmPatronen_Incendiary"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/HighCaliber/Incendiary</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_792x94mmPatronen_Sabot"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/HighCaliber/Sabot</texPath>
+        </value>
+    </Operation>
+
+    <!--===== 88mmRPzB =====-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Ammo_88mmRPzB_HEAT"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Ammo/German/Rocket/88mmRocket/HEAT</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Bullet_88mmRPzB_HEAT"]/graphicData/texPath
+        </xpath>
+        <value>
+            <texPath>Things/Projectile/HRK_Panzerschreck</texPath>
+        </value>
+    </Operation>
+
+</Patch>

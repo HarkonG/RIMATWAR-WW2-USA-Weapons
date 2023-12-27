@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<loadFolders>
+    <v1.4>
+        <li>/</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology_copy">Ideology</li>
+        <li IfModActive="imranfish.xmlextensions">XMLExtensions</li>
+        <li IfModActive="imranfish.xmlextensions_copy">XMLExtensions</li>
+        <li IfModActive="CETeam.CombatExtended">CE</li>
+        <li IfModActive="CETeam.CombatExtended_copy">CE</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">MVCF</li>
+        <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core_copy">MVCF</li>
+    </v1.4>
+</loadFolders>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/StyleCategoryDef[defName="HRK_StyleCat_RimAtWar"]/thingDefStyles</xpath>
+        <value>
+            <li>
+                <thingDef>Gun_Autopistol</thingDef>
+                <styleDef>HRK_M1911Pistol_Alt</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_BARRifle</thingDef>
+                <styleDef>HRK_BARRifle_Alt</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_Bazooka</thingDef>
+                <styleDef>HRK_Bazooka_Alt</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_M3SMG</thingDef>
+                <styleDef>HRK_M3SMG_Alt</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_M1919LMG</thingDef>
+                <styleDef>HRK_M1919LMG_Alt</styleDef>
+            </li>
+            <li>
+                <thingDef>HRK_M1917Revolver</thingDef>
+                <styleDef>HRK_M1917Revolver_Alt</styleDef>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

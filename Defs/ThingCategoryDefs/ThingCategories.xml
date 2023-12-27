@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <!--WeaponsRanged-->
+    <ThingCategoryDef>
+        <defName>HRK_Category_RimAtWarWeaponsRanged</defName>
+        <label>Rim At War</label>
+        <parent>WeaponsRanged</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>HRK_Category_RimAtWarWeaponsRanged_USA</defName>
+        <label>USA</label>
+        <parent>HRK_Category_RimAtWarWeaponsRanged</parent>
+    </ThingCategoryDef>
+
+    <!--Grenades-->
+    <ThingCategoryDef>
+        <defName>HRK_Category_RimAtWarGrenades</defName>
+        <label>Rim At War</label>
+        <parent>Grenades</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>HRK_Category_RimAtWarGrenades_USA</defName>
+        <label>USA</label>
+        <parent>HRK_Category_RimAtWarGrenades</parent>
+    </ThingCategoryDef>
+
+</Defs>

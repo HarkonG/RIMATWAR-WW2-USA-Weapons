@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XmlExtensions.SettingsMenuDef>
+        <defName>HRK_settings_RIMATWARWW2USAWeapons</defName>
+        <modId>Harkon.RIMATWAR.WW2USAWeapons</modId>
+        <label>RIM AT WAR - WW2 USA Weapons</label>
+        <settings>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>RIM AT WAR - WW2 USA Weapons</text>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+            </li>
+
+            <!-- ========== TEXTURE SETTINGS ========== -->
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>TEXTURE SETTINGS</text>
+                <anchor>Middle</anchor>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Select any of the options to swap the base texture for the one icluded in the Rim at War alternate style. Have in mind that this will not only replace the base texture with the alternate one but it will also replace the alternate texture with the base one.</text>
+                <font>Tiny</font>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+            <li Class="XmlExtensions.Setting.SplitColumn">
+                <gapSize>70</gapSize>
+                <leftCol>
+
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <label>M1918 bar</label>
+                        <key>HRK_BARRifle</key>
+                        <defaultValue>false</defaultValue>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <label>Bazooka</label>
+                        <key>HRK_Bazooka</key>
+                        <defaultValue>false</defaultValue>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <label>M3 grease gun</label>
+                        <key>HHRK_M3SMG</key>
+                        <defaultValue>false</defaultValue>
+                    </li>
+
+                </leftCol>
+                <rightCol>
+
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <label>M1911</label>
+                        <key>HRK_M1911Pistol</key>
+                        <defaultValue>false</defaultValue>
+                    </li>
+
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <label>M1917 revolver</label>
+                        <key>HRK_M1917Revolver</key>
+                        <defaultValue>false</defaultValue>
+                    </li>
+
+                </rightCol>
+            </li>
+
+            <li Class="XmlExtensions.Setting.GapLine"/>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Remember any change of the settings needs a restart to take effect.</text>
+                <font>Tiny</font>
+            </li>
+            <li Class="XmlExtensions.Setting.Gap"/>
+            <li Class="XmlExtensions.Setting.ResetSettings"/>
+            <li Class="XmlExtensions.Setting.Gap"/>
+
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+
+</Defs>

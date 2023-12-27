@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.RIMATWAR.WW2GermanWeapons</modId>
+        <key>HRK_P08Luger</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationSequence">
+                <operations>
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_P08Luger"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_P08Luger_Alt</texPath>
+                        </value>
+                    </li>
+                    <!--<li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_P08Luger"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_P08Luger_Alt</uiIconPath>
+                        </value>
+                    </li>-->
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_P08Luger_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_P08Luger</texPath>
+                        </value>
+                    </li>
+                    <!--<li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_P08Luger_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_P08Luger</uiIconPath>
+                        </value>
+                    </li>-->
+
+                </operations>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.RIMATWAR.WW2GermanWeapons</modId>
+        <key>HRK_MP40SMG</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationSequence">
+                <operations>
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_MP40SMG"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_MP40SMG_Alt</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_MP40SMG"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_MP40SMG_Alt</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_MP40SMG_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_MP40SMG</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_MP40SMG_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_MP40SMG</uiIconPath>
+                        </value>
+                    </li>
+
+                </operations>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.RIMATWAR.WW2GermanWeapons</modId>
+        <key>HRK_StG44AR</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationSequence">
+                <operations>
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_StG44AR"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_StG44AR_Alt</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_StG44AR"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_StG44AR_Alt</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_StG44AR_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_StG44AR</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_StG44AR_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_StG44AR</uiIconPath>
+                        </value>
+                    </li>
+
+                </operations>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.RIMATWAR.WW2GermanWeapons</modId>
+        <key>HRK_G43RifleScoped</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationSequence">
+                <operations>
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_G43RifleScoped"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_G43RifleScoped_Alt</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_G43RifleScoped"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_G43RifleScoped_Alt</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_G43RifleScoped_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_G43RifleScoped</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_G43RifleScoped_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_G43RifleScoped</uiIconPath>
+                        </value>
+                    </li>
+
+                </operations>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.RIMATWAR.WW2GermanWeapons</modId>
+        <key>HRK_FG42LMGScoped</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationSequence">
+                <operations>
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_FG42LMGScoped"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_FG42LMGScoped_Alt</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_FG42LMGScoped"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_FG42LMGScoped_Alt</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_FG42LMGScoped_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_FG42LMGScoped</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_FG42LMGScoped_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_FG42LMGScoped</uiIconPath>
+                        </value>
+                    </li>
+
+                </operations>
+            </Operation>
+        </caseTrue>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>Harkon.RIMATWAR.WW2GermanWeapons</modId>
+        <key>HRK_Karabiner98k</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="PatchOperationSequence">
+                <operations>
+
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_Karabiner98k"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_Karabiner98k_Alt</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_Karabiner98k"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_Karabiner98k_Alt</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_Karabiner98k_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_Karabiner98k</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_Karabiner98k_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_Karabiner98k</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_Karabiner98kGL"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_Karabiner98kGL_Alt</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_Karabiner98kGL"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_Karabiner98kGL_Alt</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_Karabiner98kGL_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_Karabiner98kGL</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_Karabiner98kGL_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_Karabiner98kGL</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Base Texture -->
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_Karabiner98kSR"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_Karabiner98kSR_Alt</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace">
+                        <xpath>/Defs/ThingDef[defName="HRK_Karabiner98kSR"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_Karabiner98kSR_Alt</uiIconPath>
+                        </value>
+                    </li>
+
+                    <!-- Ideology Style -->
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_Karabiner98kSR_Alt"]/graphicData/texPath</xpath>
+                        <value>
+                            <texPath>Things/Item/Equipment/WeaponRanged/HRK_Karabiner98kSR</texPath>
+                        </value>
+                    </li>
+                    <li Class="PatchOperationReplace" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>/Defs/ThingStyleDef[defName="HRK_Karabiner98kSR_Alt"]/uiIconPath</xpath>
+                        <value>
+                            <uiIconPath>UI/Weapons/HRK_Karabiner98kSR</uiIconPath>
+                        </value>
+                    </li>
+
+                </operations>
+            </Operation>
+
+        </caseTrue>
+    </Operation>
+
+</Patch>

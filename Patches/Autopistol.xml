@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <!--<Operation Class="PatchOperationAttributeSet">
+        <xpath>Defs/ThingDef[defName="Gun_Autopistol"]</xpath>
+        <attribute>ParentName</attribute>
+        <value>HRK_RimAtWar_USA_BaseHumanMakeableGun</value>
+    </Operation>-->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Gun_Autopistol"]</xpath>
+        <value>
+            <thingCategories Inherit="False">
+                <li>HRK_Category_RimAtWarWeaponsRanged_USA</li>
+            </thingCategories>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/label</xpath>
+        <value>
+            <label>M1911</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Things/Item/Equipment/WeaponRanged/HRK_M1911Pistol</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/soundInteract</xpath>
+        <value>
+            <soundInteract>HRK_Interact_M1911Pistol</soundInteract>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Gun_Autopistol"]/verbs/li/soundCast</xpath>
+        <value>
+            <soundCast>HRK_Shot_M1911Pistol</soundCast>
+        </value>
+    </Operation>
+
+</Patch>
