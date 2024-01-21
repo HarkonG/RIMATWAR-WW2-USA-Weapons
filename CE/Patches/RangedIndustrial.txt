@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <!--===== TOOLS FOR THE TOOL GOD =====-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="HRK_M1917Revolver"]/tools
+        </xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>grip</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>2</power>
+                    <cooldownTime>1.54</cooldownTime>
+                    <chanceFactor>1.5</chanceFactor>
+                    <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Grip</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>muzzle</label>
+                    <capacities>
+                        <li>Poke</li>
+                    </capacities>
+                    <power>2</power>
+                    <cooldownTime>1.54</cooldownTime>
+                    <armorPenetrationBlunt>0.555</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="HRK_Auto5Shotgun" or defName="HRK_BARRifle" or defName="HRK_M1A1Carbine" or defName="HRK_M1A1Thompson" or defName="HRK_M1Garand" or defName="HRK_M1GarandGL" or defName="HRK_M3SMG" or defName="HRK_M1903A1SR" or defName="HRK_M1919LMG"]/tools
+        </xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>stock</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>8</power>
+                    <cooldownTime>1.55</cooldownTime>
+                    <chanceFactor>1.5</chanceFactor>
+                    <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Stock</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>barrel</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>5</power>
+                    <cooldownTime>2.02</cooldownTime>
+                    <armorPenetrationBlunt>1.630</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                </li>
+                <li Class="CombatExtended.ToolCE">
+                    <label>muzzle</label>
+                    <capacities>
+                        <li>Poke</li>
+                    </capacities>
+                    <power>8</power>
+                    <cooldownTime>1.55</cooldownTime>
+                    <armorPenetrationBlunt>2.755</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Muzzle</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="HRK_Bazooka" or defName="HRK_M18RecoillessRifle"]/tools
+        </xpath>
+        <value>
+            <tools>
+                <li Class="CombatExtended.ToolCE">
+                    <label>barrel</label>
+                    <capacities>
+                        <li>Blunt</li>
+                    </capacities>
+                    <power>10</power>
+                    <cooldownTime>2.44</cooldownTime>
+                    <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
+                    <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
+                </li>
+            </tools>
+        </value>
+    </Operation>
+
+    <!--===== HRK_M1917Revolver =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M1917Revolver</defName>
+        <statBases>
+            <WorkToMake>4500</WorkToMake>
+            <Mass>1.10</Mass>
+            <Bulk>2.70</Bulk>
+            <SwayFactor>1.27</SwayFactor>
+            <ShotSpread>0.16</ShotSpread>
+            <SightsEfficiency>0.70</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.48</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>25</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+            <warmupTime>0.6</warmupTime>
+            <range>12</range>
+            <soundCast>HRK_Shot_M1917Revolver</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>2.52</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>6</magazineSize>
+            <reloadTime>4</reloadTime>
+            <ammoSet>AmmoSet_45ACP</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>Snapshot</aiAimMode>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_Sidearm</li>
+            <li>CE_AI_BROOM</li>
+            <li>CE_OneHandedWeapon</li>
+        </weaponTags>
+    </Operation>
+
+    <!--===== HRK_M1A1Thompson =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M1A1Thompson</defName>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <Mass>4.50</Mass>
+            <Bulk>8.10</Bulk>
+            <SwayFactor>1.26</SwayFactor>
+            <ShotSpread>0.12</ShotSpread>
+            <SightsEfficiency>1</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+            <burstShotCount>6</burstShotCount>
+            <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+            <warmupTime>0.6</warmupTime>
+            <range>25</range>
+            <soundCast>HRK_Shot_M1A1Thompson</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>1.37</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>30</magazineSize>
+            <reloadTime>4</reloadTime>
+            <ammoSet>AmmoSet_45ACP</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>Snapshot</aiAimMode>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+            <aimedBurstShotCount>3</aimedBurstShotCount>
+        </FireModes>
+        <weaponTags>
+            <li>CE_SMG</li>
+            <li>CE_AI_BROOM</li>
+        </weaponTags>
+    </Operation>
+
+    <!--===== HRK_Auto5Shotgun ===== -->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_Auto5Shotgun</defName>
+        <statBases>
+            <Mass>4.10</Mass>
+            <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
+            <ShotSpread>0.11</ShotSpread>
+            <SwayFactor>1.68</SwayFactor>
+            <Bulk>12.70</Bulk>
+            <SightsEfficiency>1</SightsEfficiency>
+            <WorkToMake>10000</WorkToMake>
+        </statBases>
+        <costList>
+            <Steel>50</Steel>
+            <WoodLog>10</WoodLog>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+            <warmupTime>0.6</warmupTime>
+            <range>16</range>
+            <soundCast>HRK_Shot_Auto5Shotgun</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>2.26</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>5</magazineSize>
+            <reloadOneAtATime>true</reloadOneAtATime>
+            <reloadTime>0.85</reloadTime>
+            <ammoSet>AmmoSet_12Gauge</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>Snapshot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_BROOM</li>
+        </weaponTags>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="HRK_Auto5Shotgun"]/soundInteract</xpath>
+        <value>
+            <soundInteract>HRK_Reload_Auto5Shotgun</soundInteract>
+        </value>
+    </Operation>
+
+    <!--===== HRK_M3SMG =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M3SMG</defName>
+        <statBases>
+            <WorkToMake>28500</WorkToMake>
+            <Mass>3.7</Mass>
+            <Bulk>5.56</Bulk>
+            <SwayFactor>1.11</SwayFactor>
+            <ShotSpread>0.14</ShotSpread>
+            <SightsEfficiency>1</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <WoodLog>5</WoodLog>
+            <Steel>60</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+            <burstShotCount>6</burstShotCount>
+            <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+            <warmupTime>0.6</warmupTime>
+            <range>18</range>
+            <soundCast>HRK_Shot_M3SMG</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>1.49</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>30</magazineSize>
+            <reloadTime>4</reloadTime>
+            <ammoSet>AmmoSet_45ACP</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>Snapshot</aiAimMode>
+            <aiUseBurstMode>TRUE</aiUseBurstMode>
+            <aimedBurstShotCount>3</aimedBurstShotCount>
+        </FireModes>
+        <weaponTags>
+            <li>CE_SMG</li>
+            <li>CE_AI_BROOM</li>
+        </weaponTags>
+    </Operation>
+
+
+    <!-- ==== HRK_M1A1Carbine ==== -->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M1A1Carbine</defName>
+        <statBases>
+            <Bulk>6.35</Bulk>
+            <Mass>2.40</Mass>
+            <SwayFactor>1.14</SwayFactor>
+            <ShotSpread>0.08</ShotSpread>
+            <SightsEfficiency>1</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+            <WorkToMake>23000</WorkToMake>
+        </statBases>
+        <costList>
+            <WoodLog>10</WoodLog>
+            <Steel>60</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <range>37</range>
+            <warmupTime>0.9</warmupTime>
+            <defaultProjectile>Bullet_30Carbine_FMJ</defaultProjectile>
+            <soundCast>HRK_Shot_M1A1Carbine</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>1.88</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <reloadTime>4</reloadTime>
+            <magazineSize>15</magazineSize>
+            <ammoSet>AmmoSet_30Carbine</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+            <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_SR</li>
+        </weaponTags>
+    </Operation>
+
+    <!-- ==== HRK_M1Garand ==== -->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M1Garand</defName>
+        <statBases>
+            <Bulk>11.00</Bulk>
+            <Mass>4.31</Mass>
+            <SwayFactor>1.53</SwayFactor>
+            <ShotSpread>0.05</ShotSpread>
+            <SightsEfficiency>1</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
+            <WorkToMake>23000</WorkToMake>
+        </statBases>
+        <costList>
+            <WoodLog>10</WoodLog>
+            <Steel>60</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <range>52</range>
+            <warmupTime>0.9</warmupTime>
+            <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+            <soundCast>HRK_Shot_M1Garand</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>1.99</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <reloadTime>4.3</reloadTime>
+            <magazineSize>8</magazineSize>
+            <ammoSet>AmmoSet_3006Springfield</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+            <aiAimMode>AimedShot</aiAimMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_SR</li>
+        </weaponTags>        
+    </Operation>
+
+    <!-- ==== HRK_M1GarandGL ==== -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+            <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+                <defName>HRK_M1GarandGL</defName>
+                <statBases>
+                    <Bulk>11.00</Bulk>
+                    <Mass>4.31</Mass>
+                    <SwayFactor>1.53</SwayFactor>
+                    <ShotSpread>0.15</ShotSpread>
+                    <SightsEfficiency>1</SightsEfficiency>
+                    <RangedWeapon_Cooldown>0.91</RangedWeapon_Cooldown>
+                    <WorkToMake>23000</WorkToMake>
+                </statBases>
+                <costList>
+                    <WoodLog>10</WoodLog>
+                    <Steel>60</Steel>
+                    <ComponentIndustrial>4</ComponentIndustrial>
+                </costList>
+                <Properties>
+                    <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <range>35</range>
+                    <warmupTime>1.1</warmupTime>
+                    <defaultProjectile>Bullet_22mmRifleGrenade_HE</defaultProjectile>
+                    <soundCast>HRK_Shot_M1GarandGL</soundCast>
+                    <soundCastTail>GunTail_Medium</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                    <recoilAmount>3.47</recoilAmount>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                    </targetParams>
+                </Properties>
+                <AmmoUser>
+                    <reloadTime>4.3</reloadTime>
+                    <magazineSize>3.5</magazineSize>
+                    <ammoSet>AmmoSet_22mmRifleGrenade</ammoSet>
+                </AmmoUser>
+                <FireModes>
+                    <aiAimMode>SuppressFire</aiAimMode>
+                    <aiUseBurstMode>FALSE</aiUseBurstMode>
+                </FireModes>
+                <weaponTags>
+                    <li>CE_AI_AOE</li>
+                </weaponTags>
+            </li>
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="HRK_M1GarandGL"]/comps</xpath>
+                <value>
+                    <li Class="CombatExtended.CompProperties_UnderBarrel">
+                        <propsUnderBarrel>
+                            <magazineSize>8</magazineSize>
+                            <reloadTime>4.3</reloadTime>
+                            <ammoSet>AmmoSet_3006Springfield</ammoSet>
+                        </propsUnderBarrel>
+                        <verbPropsUnderBarrel>
+                            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                            <hasStandardCommand>True</hasStandardCommand>
+                            <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+                            <warmupTime>0.9</warmupTime>
+                            <range>52</range>
+                            <soundCast>HRK_Shot_M1Garand</soundCast>
+                            <soundCastTail>GunTail_Medium</soundCastTail>
+                            <muzzleFlashScale>9</muzzleFlashScale>
+                            <recoilAmount>1.99</recoilAmount>
+                        </verbPropsUnderBarrel>
+                        <propsFireModesUnderBarrel>
+                            <aiAimMode>AimedShot</aiAimMode>
+                            <aiUseBurstMode>FALSE</aiUseBurstMode>
+                        </propsFireModesUnderBarrel>
+                    </li>
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+    <!--===== HRK_BARRifle =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_BARRifle</defName>
+        <statBases>
+            <WorkToMake>32500</WorkToMake>
+            <Mass>8.80</Mass>
+            <Bulk>12.15</Bulk>
+            <SwayFactor>2.10</SwayFactor>
+            <ShotSpread>0.05</ShotSpread>
+            <SightsEfficiency>1</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <WoodLog>5</WoodLog>
+            <Steel>60</Steel>
+            <ComponentIndustrial>6</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+            <burstShotCount>6</burstShotCount>
+            <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+            <warmupTime>1.1</warmupTime>
+            <range>59</range>
+            <soundCast>HRK_Shot_FG42LMG</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>1.40</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>20</magazineSize>
+            <reloadTime>4</reloadTime>
+            <ammoSet>AmmoSet_3006Springfield</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+            <aiUseBurstMode>TRUE</aiUseBurstMode>
+            <aimedBurstShotCount>3</aimedBurstShotCount>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_AR</li>
+            <li>Bipod_Rifle</li>
+        </weaponTags>
+    </Operation>
+
+    <!--===== HRK_M1919LMG =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M1919LMG</defName>
+        <statBases>
+            <WorkToMake>33000</WorkToMake>
+            <Mass>14.00</Mass>
+            <Bulk>16.00</Bulk>
+            <SwayFactor>1.92</SwayFactor>
+            <ShotSpread>0.05</ShotSpread>
+            <SightsEfficiency>1.00</SightsEfficiency>
+            <RangedWeapon_Cooldown>0.56</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <WoodLog>10</WoodLog>
+            <Steel>95</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+            <burstShotCount>10</burstShotCount>
+            <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+            <warmupTime>1.3</warmupTime>
+            <range>62</range>
+            <soundCast>HRK_Shot_M1919LMG</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>1.06</recoilAmount>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+            <recoilPattern>Mounted</recoilPattern>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>250</magazineSize>
+            <reloadTime>7.8</reloadTime>
+            <ammoSet>AmmoSet_3006Springfield</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>SuppressFire</aiAimMode>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+            <aimedBurstShotCount>5</aimedBurstShotCount>
+            <noSingleShot>true</noSingleShot>
+        </FireModes>
+        <weaponTags>
+            <li>CE_MachineGun</li>
+            <li>CE_AI_LMG</li>
+            <li>Bipod_LMG</li>
+        </weaponTags>
+    </Operation>
+
+    <!--===== HRK_M1903A1SR =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M1903A1SR</defName>
+        <statBases>
+            <WorkToMake>15500</WorkToMake>
+            <Mass>3.9</Mass>
+            <Bulk>11.00</Bulk>
+            <SwayFactor>1.57</SwayFactor>
+            <ShotSpread>0.05</ShotSpread>
+            <SightsEfficiency>2.48</SightsEfficiency>
+            <RangedWeapon_Cooldown>1.17</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <WoodLog>10</WoodLog>
+            <Steel>55</Steel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
+            <warmupTime>1.5</warmupTime>
+            <range>74</range>
+            <soundCast>HRK_Shot_M1903A1SR</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <recoilAmount>2.09</recoilAmount>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>5</magazineSize>
+            <reloadTime>4.3</reloadTime>
+            <ammoSet>AmmoSet_3006Springfield</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_SR</li>
+        </weaponTags>
+    </Operation>
+
+    <!--===== HRK_M18RecoillessRifle =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_M18RecoillessRifle</defName>
+        <statBases>
+            <WorkToMake>27000</WorkToMake>
+            <Mass>20.00</Mass>
+            <Bulk>16.40</Bulk>
+            <SwayFactor>3.59</SwayFactor>
+            <ShotSpread>0.2</ShotSpread>
+            <SightsEfficiency>2.17</SightsEfficiency>
+            <RangedWeapon_Cooldown>1.54</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>110</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_57x303mmR_HEAT</defaultProjectile>
+            <warmupTime>2.04</warmupTime>
+            <range>51</range>
+            <soundCast>HRK_Shot_M18RecoillessRifle</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>1</magazineSize>
+            <reloadTime>8.6</reloadTime>
+            <ammoSet>AmmoSet_57x303mmR</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_SR</li>
+        </weaponTags>
+    </Operation>
+
+    <!--===== HRK_Bazooka =====-->
+    <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
+        <defName>HRK_Bazooka</defName>
+        <statBases>
+            <WorkToMake>27000</WorkToMake>
+            <Mass>5.8 0</Mass>
+            <Bulk>14.40</Bulk>
+            <SwayFactor>1.95</SwayFactor>
+            <ShotSpread>0.2</ShotSpread>
+            <SightsEfficiency>1.0</SightsEfficiency>
+            <RangedWeapon_Cooldown>1.50</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Steel>110</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <Properties>
+            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+            <hasStandardCommand>True</hasStandardCommand>
+            <defaultProjectile>Bullet_M6A1_HEAT</defaultProjectile>
+            <warmupTime>1.9</warmupTime>
+            <range>24</range>
+            <soundCast>HRK_Shot_Bazooka</soundCast>
+            <soundCastTail>GunTail_Medium</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </Properties>
+        <AmmoUser>
+            <magazineSize>1</magazineSize>
+            <reloadTime>8.6</reloadTime>
+            <ammoSet>AmmoSet_M6Rocket</ammoSet>
+        </AmmoUser>
+        <FireModes>
+            <aiAimMode>AimedShot</aiAimMode>
+            <aiUseBurstMode>FALSE</aiUseBurstMode>
+        </FireModes>
+        <weaponTags>
+            <li>CE_AI_SR</li>
+        </weaponTags>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/RecipeDef[defName="MakeAmmo_M6_HEAT" or defName="MakeAmmo_M6A1_HEAT" or defName="MakeAmmo_M6A3_HEAT" or defName="MakeAmmo_M6A3_Incendiary"]</xpath>
+        <value>
+            <researchPrerequisite>Machining</researchPrerequisite>
+        </value>
+    </Operation>
+
+    <!--===== REMOVE DRAWBACKS =====-->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/ThingDef[defName="HRK_M18RecoillessRifle" or defName="HRK_Bazooka"]/equippedStatOffsets/MoveSpeed</xpath>
+    </Operation>
+
+</Patch>

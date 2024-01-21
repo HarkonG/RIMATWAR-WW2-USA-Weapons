@@ -537,9 +537,9 @@
         </weaponTags>
     </Operation>
 
-    <!--===== HRK_M1903SR =====-->
+    <!--===== HRK_M1903A1SR =====-->
     <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
-        <defName>HRK_M1903SR</defName>
+        <defName>HRK_M1903A1SR</defName>
         <statBases>
             <WorkToMake>15500</WorkToMake>
             <Mass>3.9</Mass>
@@ -560,7 +560,7 @@
             <defaultProjectile>Bullet_3006Springfield_FMJ</defaultProjectile>
             <warmupTime>1.5</warmupTime>
             <range>74</range>
-            <soundCast>HRK_Shot_M1903SR</soundCast>
+            <soundCast>HRK_Shot_M1903A1SR</soundCast>
             <soundCastTail>GunTail_Medium</soundCastTail>
             <muzzleFlashScale>9</muzzleFlashScale>
             <recoilAmount>2.09</recoilAmount>
@@ -627,7 +627,7 @@
         <defName>HRK_Bazooka</defName>
         <statBases>
             <WorkToMake>27000</WorkToMake>
-            <Mass>5.8 0</Mass>
+            <Mass>5.80</Mass>
             <Bulk>14.40</Bulk>
             <SwayFactor>1.95</SwayFactor>
             <ShotSpread>0.2</ShotSpread>
@@ -663,18 +663,6 @@
         <weaponTags>
             <li>CE_AI_SR</li>
         </weaponTags>
-    </Operation>
-
-    <Operation Class="PatchOperationAdd">
-        <xpath>Defs/RecipeDef[defName="MakeAmmo_M6_HEAT" or defName="MakeAmmo_M6A1_HEAT" or defName="MakeAmmo_M6A3_HEAT" or defName="MakeAmmo_M6A3_Incendiary"]</xpath>
-        <value>
-            <researchPrerequisite>Machining</researchPrerequisite>
-        </value>
-    </Operation>
-
-    <!--===== REMOVE DRAWBACKS =====-->
-    <Operation Class="PatchOperationRemove">
-        <xpath>Defs/ThingDef[defName="HRK_M18RecoillessRifle" or defName="HRK_Bazooka"]/equippedStatOffsets/MoveSpeed</xpath>
     </Operation>
 
 </Patch>

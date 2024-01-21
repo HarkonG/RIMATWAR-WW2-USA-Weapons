@@ -9,7 +9,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="HRK_M1917Revolver"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
@@ -22,7 +22,7 @@
 					</value>
 				</li>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="HRK_M3SMG"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
@@ -35,7 +35,7 @@
 					</value>
 				</li>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="HRK_M1A1Thompson"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
@@ -48,7 +48,7 @@
 					</value>
 				</li>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="HRK_BARRifle"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
@@ -61,8 +61,8 @@
 					</value>
 				</li>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
-					<xpath>Defs/ThingDef[defName="M1Carbine"]</xpath>
+				<li Class="PatchOperationAddModExtension">
+					<xpath>Defs/ThingDef[defName="HRK_M1A1Carbine"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
 							<def>MF_StandardMuzzleFalsh</def>
@@ -74,7 +74,7 @@
 					</value>
 				</li>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="HRK_M1Garand"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
@@ -87,7 +87,7 @@
 					</value>
 				</li>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="HRK_M1903A1SR"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">
@@ -100,7 +100,7 @@
 					</value>
 				</li>
 
-				<li Class="SafePatcher.PatchOperationSetModExtension">
+				<li Class="PatchOperationAddModExtension">
 					<xpath>Defs/ThingDef[defName="HRK_M1919LMG"]</xpath>
 					<value>
 						<li Class="MuzzleFlash.MuzzleFlashProps">

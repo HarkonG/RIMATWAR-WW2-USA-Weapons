@@ -4,7 +4,7 @@
     <ThingCategoryDef>
         <defName>Ammo57x303mmR</defName>
         <label>57x303mmR</label>
-        <parent>Ammocartridge</parent>
+        <parent>AmmoRockets</parent>
         <iconPath>UI/Icons/ThingCategories/CaliberCannon</iconPath>
     </ThingCategoryDef>
 
@@ -73,7 +73,7 @@
         <detonateProjectile>Bullet_57x303mmR_HE</detonateProjectile>
     </ThingDef>
 
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="57x303mmRRocketBase">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="57x303mmRBase">
         <defName>Ammo_57x303mmR_Incendiary</defName>
         <label>57x303mmR cartridge (Incendiary)</label>
         <graphicData>
@@ -101,7 +101,7 @@
         <defName>Ammo_57x303mmR_WhitePhosphorus</defName>
         <label>57x303mmR cartridge (White phosphorus)</label>
         <graphicData>
-            <texPath>Things/Ammo/Japanese/GrenadeLauncher/50mm/WhitePhosphorus</texPath>
+            <texPath>Things/Ammo/RPG/Thermobaric</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>
@@ -111,7 +111,7 @@
         <detonateProjectile>Bullet_57x303mmR_WhitePhosphorus</detonateProjectile>
     </ThingDef>
 
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base90mmRecoillessAmmo">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="57x303mmRBase">
         <defName>Ammo_57x303mmR_Buck</defName>
         <label>57x303mmR cartridge (CAN)</label>
         <graphicData>
@@ -129,7 +129,7 @@
 
     <!-- ================== Projectiles ================== -->
 
-    <ThingDef Name="Base57x303mmR" ParentName="BaseExplosiveBullet" Abstract="true">
+    <ThingDef Name="Base57x303mmRBullet" ParentName="BaseExplosiveBullet" Abstract="true">
         <graphicData>
             <texPath>Things/Projectile/Rocket_Big</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -141,7 +141,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="Base57x303mmR">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base57x303mmRBullet">
         <defName>Bullet_57x303mmR_HEAT</defName>
         <label>57x303mmR shell (HEAT)</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -167,7 +167,7 @@
         </comps>
     </ThingDef>
 
-    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base57x303mmR">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base57x303mmRBullet">
         <defName>Bullet_57x303mmR_HE</defName>
         <label>57x303mmR shell (HE)</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -188,7 +188,7 @@
         </comps>
     </ThingDef>
 
-    <ThingDef ParentName="Base57x303mmR">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base57x303mmRBullet">
         <defName>Bullet_57x303mmR_Incendiary</defName>
         <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
         <label>57x303mmR shell (Incendiary)</label>
@@ -206,11 +206,11 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="Base57x303mmRBullet">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base57x303mmRBullet">
         <defName>Bullet_57x303mmR_WhitePhosphorus</defName>
         <label>57x303mmR shell (White phosphorus)</label>
         <graphicData>
-            <texPath>Things/Projectile/LauncherShot/Japan/WhitePhosphorus</texPath>
+            <texPath>Things/Projectile/RPG/Thermobaric</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -224,7 +224,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="Base12GaugeBullet">
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base12GaugeBullet">
         <defName>Bullet_57x303mmR_Buck</defName>
         <label>57x303mmR flechette</label>
         <graphicData>

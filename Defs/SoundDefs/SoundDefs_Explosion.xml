@@ -23,4 +23,25 @@
         </subSounds>
     </SoundDef>
 
+    <SoundDef>
+        <defName>HRK_Explosion_WhitePhosphorusGrenade</defName>
+        <context>MapOnly</context>
+        <eventNames/>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapons/HRK_Explosion_WhitePhosphorusGrenade</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>
+                    <min>34</min>
+                    <max>40</max>
+                </volumeRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
 </Defs>

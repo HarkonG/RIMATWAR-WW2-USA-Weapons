@@ -9,6 +9,13 @@
     </CombatExtended.AmmoCategoryDef>
 
     <CombatExtended.AmmoCategoryDef>
+        <defName>GrenadeWhitePhosphorus</defName>
+        <label>white phosphorus</label>
+        <labelShort>white phosphorus</labelShort>
+        <description>Filled with white phosphorus. The chemical is dispersed on impact, increasing the temperature and covering the area and pawns in flames.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+    <CombatExtended.AmmoCategoryDef>
         <defName>GrenadeHEAT</defName>
         <label>high-explosive anti-tank</label>
         <labelShort>HEAT</labelShort>

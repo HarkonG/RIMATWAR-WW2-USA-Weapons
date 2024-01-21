@@ -25,7 +25,7 @@
             <texPath>Things/Item/Equipment/WeaponRanged/HRK_M3SMG_Alt</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!--<uiIconPath>UI/Weapons/HRK_M3SMG_Alt</uiIconPath>-->
+        <uiIconPath>UI/Weapons/HRK_M3SMG_Alt</uiIconPath>
     </ThingStyleDef>
 
     <ThingStyleDef>
@@ -34,7 +34,7 @@
             <texPath>Things/Item/Equipment/WeaponRanged/HRK_M1911Pistol_Alt</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!--<uiIconPath>UI/Weapons/HRK_M1911Pistol_Alt</uiIconPath>-->
+        <uiIconPath>UI/Weapons/HRK_M1911Pistol_Alt</uiIconPath>
     </ThingStyleDef>
 
     <ThingStyleDef>
@@ -52,7 +52,7 @@
             <texPath>Things/Item/Equipment/WeaponRanged/HRK_M1917Revolver_Alt</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!--<uiIconPath>UI/Weapons/HRK_M1917Revolver_Alt</uiIconPath>-->
+        <uiIconPath>UI/Weapons/HRK_M1917Revolver_Alt</uiIconPath>
     </ThingStyleDef>
 
 </Defs>
