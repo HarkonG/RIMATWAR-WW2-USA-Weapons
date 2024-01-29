@@ -9,7 +9,7 @@
             <operations>
 
                 <li Class="PatchOperationAddModExtension">
-                    <xpath>/Defs/ThingDef[defName="HRK_Bullet_M1917Revolver"]</xpath>
+                    <xpath>/Defs/ThingDef[defName="HRK_M1917Revolver"]</xpath>
                     <value>
                         <li Class="VFECore.ThingDefExtension">
                             <usableWithShields>true</usableWithShields>
