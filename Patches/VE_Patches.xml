@@ -9,12 +9,12 @@
         <nomatch Class="PatchOperationSequence">
             <operations>
 
-                <li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VWEG">
+                <!--<li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VWEG">
                     <xpath>Defs/ThingDef[defName="HRK_MK2Grenade"]/graphicData/texPath</xpath>
                     <value>
                         <texPath>Things/Item/Equipment/WeaponRanged/HRK_MK2GrenadesLoose</texPath>
                     </value>
-                </li>              
+                </li>         -->     
 
                 <li Class="PatchOperationReplace" MayRequire="VanillaExpanded.VWE">
                     <xpath>Defs/ThingDef[defName="HRK_Bazooka"]/recipeMaker/researchPrerequisite</xpath>
